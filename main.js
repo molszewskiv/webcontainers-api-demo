@@ -51,7 +51,7 @@ async function runCommand(command, ...args) {
     new WritableStream(
       {
         write(chunk) {
-          commandOutput.innerHTML = `${chunk}<br />`;
+          commandOutput.innerHTML += `${chunk}<br />`;
         }
       }
     )
